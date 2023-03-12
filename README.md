@@ -13,3 +13,17 @@ Windowsの標準環境でWPFをコンパイルします。
     - C# (.Net Framework)
     - WPF
     - XAML
+
+
+# コンパイル
+
+```
+./build.bat
+```
+
+
+# 実行
+
+```
+./se4wpf.exe
+```
