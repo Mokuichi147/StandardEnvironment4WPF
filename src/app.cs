@@ -14,14 +14,15 @@ namespace MyApp
         {
             Window window = null;
             Assembly assembly = Assembly.GetExecutingAssembly();
-            Stream stream = assembly.GetManifestResourceStream("resources/main.xaml");
+            Stream stream = assembly.GetManifestResourceStream("app.xaml");
             window = (Window)XamlReader.Load(stream);
-            /*using (var fs = new FileStream("resources/main.xaml", FileMode.Open, FileAccess.Read))
+
+            /*using (var fs = new FileStream("ruiesources/app.xaml", FileMode.Open, FileAccess.Read))
             {
                 window = (Window)XamlReader.Load(stream);
             }*/
-            window.Title = "Standard environment for WPF";
 
+            window.Title = "Standard environment for WPF";
             window.ShowDialog();
         }
     }

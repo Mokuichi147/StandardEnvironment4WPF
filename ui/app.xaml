@@ -3,7 +3,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Width="400" Height="300">
-    <!-- Client area containing the content of the window -->
-    <TextBox TextWrapping="Wrap" AcceptsReturn="True"/>
     
+    <TextBox TextWrapping="Wrap" AcceptsReturn="True"/>
 </Window>
