@@ -9,11 +9,12 @@ set WPFlibs=/r:%WPF%PresentationCore.dll /r:%WPF%PresentationFramework.dll /r:%W
 
 rem アプリケーション設定
 set FILES=src\app.cs
+set ICON=resources\default.ico
 set RESOURCES=/res:ui\app.xaml
 set OUTPUT=se4wpf.exe
 set COMPILELOG=compile.log
 
 rem コンパイル
 pushd %~dp0
-%CSC%csc.exe /nologo /utf8output /target:winexe %WPFlibs% %RESOURCES% /out:%OUTPUT% %FILES% > %COMPILELOG%
+%CSC%csc.exe /nologo /utf8output /target:winexe /win32icon:%ICON% %WPFlibs% %RESOURCES% /out:%OUTPUT% %FILES% > %COMPILELOG%
 popd
