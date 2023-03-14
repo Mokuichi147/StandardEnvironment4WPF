@@ -5,6 +5,12 @@ using System.Windows;
 using System.Windows.Markup;
 
 
+[assembly: AssemblyTitle("Windows標準環境で作成したWPFアプリ")]
+[assembly: AssemblyProduct("Standard environment for WPF")]
+[assembly: AssemblyVersion("0.1.0.0")]
+[assembly: AssemblyCopyright("Copyright (c) 2023 mokuichi147")]
+
+
 namespace MyApp
 {
     public class App
